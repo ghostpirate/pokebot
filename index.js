@@ -12,9 +12,17 @@ const port = process.env.PORT || 443,
     });
 bot.setWebHook(externalUrl + ':443/bot' + token);
 
+
 bot.on('message', (msg) => {
     const chatId = msg.chat.id
-    console.log(msg)
-// send a message to the chat acknowledging receipt of their message
-    bot.sendMessage(chatId, "WTF")
-   })
+    console.log(msg.text)
+
+    request("https://pokeapi.co/api/v2/pokemon/" + msg.text,function(err,body,response){
+
+        let data = JSON.parse(response)
+        for(let i =0; i < data.ablities.length; i++} {
+
+            bot.sendMessage(chatId,data.ablities[i].name)
+        })
+
+    })
