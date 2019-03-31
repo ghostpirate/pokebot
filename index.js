@@ -25,9 +25,9 @@ bot.on('message', (msg) => {
         }
             
         let data = JSON.parse(response)
-        for(let i =0; i < data.ablities.length; i++) {
+        for(let i =0; i < data.abilities.length; i++) {
 
-            bot.sendMessage(chatId,data.ablities[i].name)
+            bot.sendMessage(chatId,data.abilities[i].name)
         }
 
 })
