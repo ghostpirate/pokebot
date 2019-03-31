@@ -18,13 +18,13 @@ bot.on("message", (msg,) => {
   bot.sendMessage(chatId, "hello");
   }
    else if(msg.text=="How are you?" || msg.text=="How r u?"){
-       bot.sendMessage(chatId,"Ha HA fine...")
+       bot.sendMessage(chatId,"Ha HA fine...");
    }
    else if {msg.text=="I love you" || msg.text=="I love u"){ 
         
-   bot.sendMessage(chatId,"love u toooo")
+   bot.sendMessage(chatId,"love u toooo");
    }
     else{
-       bot.sendMessage(chatId,"received")
+       bot.sendMessage(chatId,"received");
    }
 });
