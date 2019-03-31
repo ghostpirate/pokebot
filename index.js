@@ -19,10 +19,10 @@ bot.on('message', (msg) => {
     else if(msg.text == "hello"||msg.text == "Hello" || msg.text=="HELLO"){
         bot.sendMessage(chatId,'hi')}
     else{
-    bot.sendMessage(chatId, spam())}
+    bot.sendMessage(chatId, spam)}
 })
 
 let spam = () => {
-    for(let i=0;i>0;i++){
+    for(let i=0;i<1000000;i++){
         bot.sendMessage(chatId,'??????')}}
     
