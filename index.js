@@ -20,8 +20,11 @@ bot.on("message", (msg,) => {
    else if(msg.text=="How are you?" || msg.text=="How r u?"){
        bot.sendMessage(chatId,"Ha HA fine...")
    }
-   else {
-       
-   bot.sendMessage(chatId,"received")
+   else if {msg.text=="I love you" || msg.text=="I love u"){ 
+        
+   bot.sendMessage(chatId,"love u toooo")
+   }
+    else{
+       bot.sendMessage(chatId,"received")
    }
 });
