@@ -20,7 +20,7 @@ bot.on("message", (msg,) => {
    else if(msg.text=="How are you?" || msg.text=="How r u?"){
        bot.sendMessage(chatId,"Ha HA fine...");
    }
-   else if (msg.text=="entha parupadi"){ 
+   else if (msg.text=="Entha parupadi"){ 
         
    bot.sendMessage(chatId,"veruthe rest eduka");
    }
