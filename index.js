@@ -17,8 +17,13 @@ bot.on('message', (msg) => {
     const chatId = msg.chat.id
     console.log(msg.text)
 
-    request("https://pokeapi.co/api/v2/pokemon/" + msg.text,function(err,body,response){
+    request("https://pokeapi.co/api/v2/pokemon/" + msg.text.toLowerCase(),function(err,body,response){
 
+        if(response == "Not Found") {
+         bot.sendMessage(chatId,"Not found")
+            return
+        }
+            
         let data = JSON.parse(response)
         for(let i =0; i < data.ablities.length; i++) {
 
