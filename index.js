@@ -16,5 +16,5 @@ bot.on('message', (msg) => {
     const chatId = msg.chat.id
     console.log(msg)
 // send a message to the chat acknowledging receipt of their message
-    bot.sendMessage(chatId, "Wassup")
+    bot.sendMessage(chatId, "WTF")
    })
