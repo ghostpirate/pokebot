@@ -14,5 +14,7 @@ bot.setWebHook(externalUrl + ':443/bot' + token);
 bot.on("message", (msg,) => {
  
   const chatId = msg.chat.id
- bot.sendMessage(chatId, "received your message");
+  if(msg.chat.id=="hai") 
+  
+ bot.sendMessage(chatId, "hello");
 });
