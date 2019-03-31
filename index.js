@@ -14,7 +14,7 @@ bot.setWebHook(externalUrl + ':443/bot' + token);
 bot.on("message", (msg,) => {
  
   const chatId = msg.chat.id 
-  if(msg.text=="hai"){
+  if(msg.text=="Hai" || "Hello"){
   bot.sendMessage(chatId, "hello");
   }
    else{
