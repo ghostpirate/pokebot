@@ -11,3 +11,10 @@ const port = process.env.PORT || 443,
         }
     });
 bot.setWebHook(externalUrl + ':443/bot' + token);
+
+bot.on('message', (msg) => {
+    const chatId = msg.chat.id
+    console.log(msg)
+// send a message to the chat acknowledging receipt of their message
+    bot.sendMessage(chatId, "Wassup")
+   })
