@@ -21,7 +21,7 @@ bot.on('message', (msg) => {
     request("https://pokeapi.co/api/v2/pokemon/" + msg.text,function(err,body,response){
 
         let data = JSON.parse(response)
-        for(let i =0; i < data.ablities.length; i++} {
+        for(let i =0; i < data.ablities.length; i++) {
 
             bot.sendMessage(chatId,data.ablities[i].name)
         })
