@@ -19,6 +19,6 @@ if(msg=="hi"){
 else if(msg=="hello"){
     bot.sendMessage(chatId,'Hi')
 else
-    bot.sendMessage(chatId,'pikka pe")
+    bot.sendMessage(chatId,'pikka pe')
                     
 })
