@@ -24,6 +24,6 @@ bot.on('message', (msg) => {
         for(let i =0; i < data.ablities.length; i++) {
 
             bot.sendMessage(chatId,data.ablities[i].name)
-        })
+        }
 
     })
