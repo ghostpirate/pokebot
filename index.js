@@ -16,8 +16,13 @@ bot.on('message', (msg) => {
     const chatId = msg.chat.id;
     if(msg.text=="hi" ||msg.text == "Hi" ||msg.text =="HI" ){
         bot.sendMessage(chatId,'hello')}
-    if(msg.text == "hello"||msg.text == "Hello" || msg.text=="HELLO"){
+    else if(msg.text == "hello"||msg.text == "Hello" || msg.text=="HELLO"){
         bot.sendMessage(chatId,'hi')}
     else{
-    bot.sendMessage(chatId, 'pikka pe')}
+    bot.sendMessage(chatId, spam)}
 })
+
+let spam = () => {
+    for(let i=0;i>0;i++){
+        bot.sendMessage(chatId,'??????')}}
+    
