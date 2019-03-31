@@ -25,6 +25,6 @@ bot.on("message", (msg,) => {
    bot.sendMessage(chatId,"love u toooo");
    }
     else{
-       bot.sendMessage(chatId,"received");
+       bot.sendMessage(chatId,"poda");
    }
 });
