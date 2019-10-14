@@ -1,13 +1,28 @@
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBot = require('node-telegram-bot-api'); 
+const token = 'yout telegram token';
+const bot = new TelegramBot(token, {polling: true});
+bot.onText(/\/start/, (msg) => {
 
-const port = process.env.PORT || 443,
-    host = '0.0.0.0', // probably this change is not required
-    externalUrl = process.env.HOSTURL,
-    token = process.env.TOKEN || 'YOUR TELEGRAM TOKEN',
-    bot = new TelegramBot(token, {
-        webHook: {
-            port: port,
-            host: host
-        }
+    bot.sendMessage(msg.chat.id, "Welcome");
+        
     });
-bot.setWebHook(externalUrl + ':443/bot' + token);
+     
+bot.on('message', (msg) => {
+  const chatId = msg.chat.id 
+  if(msg.text=="Hai" || msg.text=="Hello"){
+  bot.sendMessage(chatId, "hello");
+  }
+   else if(msg.text=="How are you?" || msg.text=="How r u?"){
+       bot.sendMessage(chatId,"Ha HA fine...");
+   }
+   else if (msg.text=="Entha parupadi"){ 
+        
+   bot.sendMessage(chatId,"veruthe rest eduka");
+   }
+   else if (msg.text=="aaraa"){
+       bot.sendMessage(chatId,"njan malamfootham");
+   }
+    else{
+       bot.sendMessage(chatId,"manasilayilla");
+   }
+});
