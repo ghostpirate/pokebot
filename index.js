@@ -14,7 +14,9 @@ bot.on('message', (msg) => {
         
    bot.sendMessage(chatId,"veruthe rest eduka");
    }
-   
+   else if (msg.text=="aaraa"){
+       bot.sendMessage(chatId,"njan malamfootham");
+   }
     else{
        bot.sendMessage(chatId,"manasilayilla");
    }
