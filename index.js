@@ -16,6 +16,6 @@ bot.on('message', (msg) => {
    }
    
     else{
-       bot.sendMessage(chatId,"poda");
+       bot.sendMessage(chatId,"manasilayilla");
    }
 });
