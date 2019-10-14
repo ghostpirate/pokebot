@@ -1,7 +1,12 @@
 const TelegramBot = require('node-telegram-bot-api'); 
 const token = 'yout telegram token';
 const bot = new TelegramBot(token, {polling: true});
-    
+bot.onText(/\/start/, (msg) => {
+
+    bot.sendMessage(msg.chat.id, "Welcome");
+        
+    });
+     
 bot.on('message', (msg) => {
   const chatId = msg.chat.id 
   if(msg.text=="Hai" || msg.text=="Hello"){
