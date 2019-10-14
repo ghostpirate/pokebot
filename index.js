@@ -7,6 +7,10 @@ bot.on('message', (msg) => {
   if(msg.text=="Hai" || msg.text=="Hello"){
   bot.sendMessage(chatId, "hello");
   }
+  else if(msg.text=="aara"){
+    bot.sendMessage(chatId,"njan oru vazhipokan");
+}
+  
    else if(msg.text=="How are you?" || msg.text=="How r u?"){
        bot.sendMessage(chatId,"Ha HA fine...");
    }
