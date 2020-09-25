@@ -11,3 +11,4 @@ const port = process.env.PORT || 443,
         }
     });
 bot.setWebHook(externalUrl + ':443/bot' + token);
+//telegram
